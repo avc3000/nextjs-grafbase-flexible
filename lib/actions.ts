@@ -1,5 +1,4 @@
 import { GraphQLClient } from "graphql-request";
-
 import { createProjectMutation, createUserMutation, deleteProjectMutation, updateProjectMutation, getProjectByIdQuery, getProjectsOfUserQuery, getUserQuery, projectsQuery } from "@/graphql";
 import { ProjectForm } from "@/common.types";
 
@@ -74,7 +73,6 @@ export const updateProject = async (form: ProjectForm, projectId: string, token:
   }
 
   let updatedForm = { ...form };
-
   const isUploadingNewImage = isBase64DataURL(form.image);
 
   if (isUploadingNewImage) {
