@@ -5,7 +5,6 @@ import Image from "next/image";
 import { signOut } from "next-auth/react";
 import { Fragment, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
-
 import { SessionInterface } from "@/common.types";
 
 const ProfileMenu = ({ session }: { session: SessionInterface }) => {
@@ -33,18 +32,18 @@ const ProfileMenu = ({ session }: { session: SessionInterface }) => {
             </div>
             <div className="flex flex-col gap-3 pt-10 items-start w-full">
               <Menu.Item>
-                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Work Preferences</Link>
+                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Preferencias Laborales</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Settings</Link>
+                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Configuración</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Profile</Link>
+                <Link href={`/profile/${session?.user?.id}`} className="text-sm">Perfil</Link>
               </Menu.Item>
             </div>
             <div className="w-full flexStart border-t border-nav-border mt-5 pt-5">
               <Menu.Item>
-                <button type="button" className="text-sm" onClick={() => signOut()}>Sign out</button>
+                <button type="button" className="text-sm" onClick={() => signOut()}>Cerrar Sessión</button>
               </Menu.Item>
             </div>
           </Menu.Items>

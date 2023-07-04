@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Flexibble",
-  description: "Showcase and discover remarkable developer projects",
+  description: "Proyectos destacados de desarrolladores",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

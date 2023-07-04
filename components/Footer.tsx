@@ -21,7 +21,7 @@ const Footer = () => (
     <div className="flex flex-col gap-12 w-full">
       <div className="flex items-start flex-col">
         <Image src="/logo-purple.svg" width={116} height={38} alt="logo" />
-        <p className="text-start text-sm font-normal mt-5 max-w-xs">Flexibble is the world&apos;s leading community for creatives to share, grow, and get hired.</p>
+        <p className="text-justify text-sm font-normal mt-5 max-w-xs">Flexibble es la comunidad mundial para que los creativos compartan, crezcan y también sean contratados.</p>
       </div>
       <div className="flex flex-wrap gap-12">
         <FooterColumn title={footerLinks[0].title} links={footerLinks[0].links} />
@@ -38,8 +38,8 @@ const Footer = () => (
       </div>
     </div>
     <div className="flexBetween footer_copyright">
-      <p>@ 2023 Flexibble. All rights reserved</p>
-      <p className="text-gray"><span className="text-black font-semibold">10,214</span> projects submitted</p>
+      <p>@ 2023 Flexibble. Todos los derechos reservados</p>
+      <p className="text-gray"><span className="text-black font-semibold">10,214</span> proyectos presentados</p>
     </div>
   </section>
 );

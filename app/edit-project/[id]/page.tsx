@@ -12,11 +12,11 @@ const EditProject = async ({ params: { id } }: { params: { id: string } }) => {
 
   const result = await getProjectDetails(id) as { project?: ProjectInterface };
   
-  if (!result?.project) return ( <p className="no-result-text">Failed to fetch project info</p> );
+  if (!result?.project) return ( <p className="no-result-text">Error al recuperar información del pryecto.</p> );
 
   return (
     <Modal>
-      <h3 className="modal-head-text">Edit Project</h3>
+      <h3 className="modal-head-text">Editar Proyecto</h3>
       <ProjectForm type="edit" session={session} project={result?.project} />
     </Modal>
   );
